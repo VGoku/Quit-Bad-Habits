@@ -1,0 +1,20 @@
+{
+  "name": "bad-habits",
+  "private": true,
+  "workspaces": [
+    "client",
+    "server"
+  ],
+  "engines": {
+    "node": "18.x"
+  },
+  "scripts": {
+    "dev": "concurrently \"npm run dev --workspace=client\" \"npm run dev --workspace=server\""
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4.1.13",
+    "@types/morgan": "^1.9.10",
+    "autoprefixer": "^10.4.21",
+    "concurrently": "^8.2.2"
+  }
+}
